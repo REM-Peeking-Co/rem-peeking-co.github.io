@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>官方网站 - 首页</title>
+    <title>Rem-Peeking-Co</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 页首 -->
+    <!-- 页首导航 -->
     <header>
-        <h1>官方网站</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- 导航栏 -->
-    <nav>
-        <ul>
-            <li><a href="#home">首页</a></li>
-            <li><a href="login.html">登录</a></li>
-        </ul>
-    </nav>
-
-    <!-- 内容区域 -->
-    <main>
-        <div class="content-box">
-            <h2>欢迎来到官方网站</h2>
-            <p>这是主页的内容展示区。</p>
-            <!-- 添加淡化的ICO.png -->
-            <div class="ico-background"></div>
+    <!-- 主内容 -->
+    <main class="container">
+        <!-- 文本框 -->
+        <div class="text-box">
+            <p>欢迎来到Rem-Peeking-Co的官方网站。</p>
+            <p>这里展示了我们的最新动态和项目成果。</p>
         </div>
+
+        <!-- 背景图片 -->
+        <div class="background-image"></div>
     </main>
 
     <!-- 页脚 -->
-    <footer>
-        <p>&copy; 2023 官方网站. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2023 Rem-Peeking-Co. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
