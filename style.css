@@ -1,4 +1,4 @@
-/* 全局样式 */
+/* 全局设置 */
 * {
     margin: 0;
     padding: 0;
@@ -7,101 +7,73 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* 黑灰色背景 */
+    color: #4B4; /* 文本颜色 */
     line-height: 1.6;
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
-}
-
-nav ul {
+/* 导航栏样式 */
+.navbar ul {
     list-style-type: none;
-    padding: 10px;
-    background-color: #444;
+    padding: 20px;
+    text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
-nav a {
-    color: white;
+.navbar a {
+    color: #4B4;
     text-decoration: none;
 }
 
-nav a:hover {
-    color: lightblue;
+.navbar a:hover {
+    color: white; /* 链接悬停时变为白色 */
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* 主页内容框样式 */
-.content-box {
-    background-color: #f0f0f0;
-    border-radius: 10px;
+/* 主容器样式 */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
     padding: 20px;
     position: relative;
-    overflow: hidden;
 }
 
-.ico-background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    background-image: url('ico.png');
-    background-size: cover;
-    opacity: 0.2;
-}
-
-/* 登录框样式 */
-.login-box {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    margin: 50px auto;
-}
-
-.login-box h2 {
+/* 文本框样式 */
+.text-box {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    border-radius: 10px; /* 圆角边框 */
     text-align: center;
-    color: #333;
 }
 
-.login-box form label {
-    display: block;
-    margin-bottom: 5px;
+.text-box p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-.login-box input {
+/* 背景图片样式 */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    height: 100%;
+    background-image: url('ICO.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* 设置图片透明度 */
+    z-index: -1; /* 确保图片在文本框后面 */
 }
 
-.login-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.login-box button:hover {
+/* 页脚样式 */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
     background-color: #333;
 }
