@@ -1,4 +1,4 @@
-## This is a website for REM Peeking co. 
-## This site is in beta, so you can't sign up for an account yet! If you are an employee, please log in with your employee account.
-## For unknown reasons, this website is being hacked. Please do not believe anything in the footer!
-## Thank you for reading!
+## 这是REM Peeking Co. 的官方网站
+## 该网站处于测试阶段，因此您还不能注册账户！如果您是员工，请使用您的员工账户登录。
+## 由于未知原因，该网站正在遭受黑客攻击。请不要相信页脚中的任何内容！
+## 感谢您的阅读！
