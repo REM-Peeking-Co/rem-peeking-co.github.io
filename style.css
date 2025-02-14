@@ -1,0 +1,79 @@
+/* 全局设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* 黑灰色背景 */
+    color: #4B4; /* 文本颜色 */
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+.navbar ul {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #4B4;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: white; /* 链接悬停时变为白色 */
+}
+
+/* 主容器样式 */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* 文本框样式 */
+.text-box {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    border-radius: 10px; /* 圆角边框 */
+    text-align: center;
+}
+
+.text-box p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* 背景图片样式 */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('ICO.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* 设置图片透明度 */
+    z-index: -1; /* 确保图片在文本框后面 */
+}
+
+/* 页脚样式 */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #333;
+}
