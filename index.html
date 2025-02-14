@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rem-Peeking-Co</title>
+    <title>Rem-Peeking-Co官方网站</title>
     <link rel="stylesheet" href="style.css">
+    <!-- 设置网页图标 -->
+    <link rel="icon" type="image/png" href="ICO.png">
 </head>
 <body>
-    <!-- 页首导航 -->
-    <header>
-        <nav class="navbar">
+    <div class="container">
+        <nav>
             <ul>
                 <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#contact">联系</a></li>
+                <li><a href="#products">产品与服务</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <!-- 移除了"联系"链接 -->
             </ul>
         </nav>
-    </header>
 
-    <!-- 主内容 -->
-    <main class="container">
-        <!-- 文本框 -->
         <div class="text-box">
-            <p>欢迎来到Rem-Peeking-Co的官方网站。</p>
+            <h1>欢迎来到Rem-Peeking-Co的官方网站</h1>
             <p>这里展示了我们的最新动态和项目成果。</p>
         </div>
 
-        <!-- 背景图片 -->
-        <div class="background-image"></div>
-    </main>
+        <!-- 登录框 -->
+        <div class="login-box">
+            <h2>用户登录</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="用户名" id="username">
+                <input type="password" placeholder="密码" id="password">
+                <button type="submit">登录</button>
+                <button type="button" onclick="showRegisterHint()">注册</button>
+            </form>
+        </div>
 
-    <!-- 页脚 -->
-    <footer class="footer">
-        <p>&copy; 2023 Rem-Peeking-Co. All rights reserved.</p>
-    </footer>
+        <!-- 页脚 -->
+        <footer>
+            <p>© 2023 Rem-Peeking-Co. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function showRegisterHint() {
+            alert("很抱歉，当前尚未开放注册功能。感谢您的理解与支持！");
+        }
+    </script>
 </body>
 </html>
