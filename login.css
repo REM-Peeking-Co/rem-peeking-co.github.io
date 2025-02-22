@@ -65,11 +65,13 @@ button:hover {
 
 .options {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 100%;
+    gap: 10px; /* 确保元素之间有一定间距 */
+    white-space: nowrap; /* 防止换行 */
 }
 
 .remember-me {
