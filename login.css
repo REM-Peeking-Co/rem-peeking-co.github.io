@@ -24,7 +24,7 @@ h2 {
 
 input {
     display: block;
-    width: calc(100% - 24px); /* 让输入框和按钮一样长，考虑内边距 */
+    width: 100%; /* 让输入框与按钮长度一致 */
     padding: 12px;
     margin: 15px 0;
     border: 2px solid transparent;
@@ -32,12 +32,12 @@ input {
     background-color: #444; /* 黑灰色输入框 */
     color: white;
     outline: none;
-    text-align: center;
     box-sizing: border-box;
 }
 
 input::placeholder {
     color: white; /* 提示字体变白 */
+    text-align: left; /* 提示词靠左 */
 }
 
 input:hover, input:focus {
@@ -53,11 +53,9 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
-    transition: box-shadow 0.3s ease-in-out;
     box-sizing: border-box;
 }
 
 button:hover {
     background-color: #3A3;
-    box-shadow: 0px 0px 10px white; /* 悬停时白光效果 */
 }
