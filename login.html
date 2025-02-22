@@ -7,6 +7,10 @@
     <link rel="icon" href="ICO.png" type="image/png">
     <link rel="stylesheet" href="login.css">
     <script>
+        function showRegisterAlert() {
+            alert("该网站处于测试阶段，因此您还不能注册账户！如果您是员工，请使用您的员工账户登录。");
+        }
+
         function setCookie(name, value, days) {
             let expires = "";
             if (days) {
@@ -55,8 +59,16 @@
         <form onsubmit="login(event)">
             <input type="text" id="username" placeholder="用户名" required>
             <input type="password" id="password" placeholder="密码" required>
+            <div class="remember-me">
+                <label>
+                    <input type="checkbox" id="rememberMe"> 记住我
+                </label>
+            </div>
             <button type="submit">登录</button>
         </form>
+        <div class="register">
+            <a href="javascript:void(0)" onclick="showRegisterAlert()">注册</a>
+        </div>
     </div>
 </body>
 </html>
