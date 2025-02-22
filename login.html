@@ -3,21 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>虚假登录页面</title>
+    <title>登录</title>
     <link rel="stylesheet" href="login.css">
+    <script>
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function checkLogin() {
+            if (getCookie("loggedIn") === "true") {
+                alert("您已登录。");
+                window.location.href = "index.html";
+            }
+        }
+
+        function login(event) {
+            event.preventDefault();
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            if (username === "orcsgdu" && password === "cooperationpwd") {
+                setCookie("loggedIn", "true", 1);
+                alert("登录成功！");
+                window.location.href = "index.html";
+            } else {
+                alert("账号或密码错误！");
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="checkLogin()">
     <div class="login-container">
         <h2>登录</h2>
-        <form>
-            <div class="input-group">
-                <label for="username">用户名</label>
-                <input type="text" id="username" placeholder="输入用户名">
-            </div>
-            <div class="input-group">
-                <label for="password">密码</label>
-                <input type="password" id="password" placeholder="输入密码">
-            </div>
+        <form onsubmit="login(event)">
+            <input type="text" id="username" placeholder="用户名" required>
+            <input type="password" id="password" placeholder="密码" required>
             <button type="submit">登录</button>
         </form>
     </div>
