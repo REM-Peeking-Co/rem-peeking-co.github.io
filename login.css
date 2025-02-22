@@ -24,7 +24,7 @@ h2 {
 
 input {
     display: block;
-    width: 100%;
+    width: calc(100% - 24px); /* 让输入框和按钮一样长，考虑内边距 */
     padding: 12px;
     margin: 15px 0;
     border: 2px solid transparent;
@@ -33,6 +33,7 @@ input {
     color: white;
     outline: none;
     text-align: center;
+    box-sizing: border-box;
 }
 
 input::placeholder {
@@ -53,6 +54,7 @@ button {
     width: 100%;
     font-size: 16px;
     transition: box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
 }
 
 button:hover {
