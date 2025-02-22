@@ -73,10 +73,16 @@ button:hover {
 }
 
 .remember-me {
-    display: flex;
-    align-items: center;
     color: white;
     font-size: 14px;
+    margin-right: 10px; /* 为了使勾选框与文字之间有间距 */
+}
+
+.remember-checkbox {
+    transform: scale(1.2); /* 放大勾选框 */
+    background-color: #444;
+    border: 2px solid white;
+    margin-right: 10px;
 }
 
 .register-link {
