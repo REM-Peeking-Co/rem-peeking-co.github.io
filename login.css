@@ -32,6 +32,11 @@ input {
     background-color: #444; /* 黑灰色输入框 */
     color: white;
     outline: none;
+    text-align: center;
+}
+
+input::placeholder {
+    color: white; /* 提示字体变白 */
 }
 
 input:hover, input:focus {
@@ -47,8 +52,10 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #3A3;
+    box-shadow: 0px 0px 10px white; /* 悬停时白光效果 */
 }
