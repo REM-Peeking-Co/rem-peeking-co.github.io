@@ -42,6 +42,8 @@ input::placeholder {
 
 input:hover, input:focus {
     border: 2px solid white; /* 鼠标放上去时加白框 */
+    background-color: #444; /* 保持输入框背景颜色为黑灰色 */
+    color: white; /* 保持字体为白色 */
 }
 
 button {
