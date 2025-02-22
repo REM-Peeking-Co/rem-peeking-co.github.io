@@ -20,6 +20,7 @@ body {
 
 h2 {
     color: #4B4;
+    margin-bottom: 10px; /* 使标题离上方更近 */
 }
 
 input {
@@ -60,4 +61,24 @@ button {
 
 button:hover {
     background-color: #3A3;
+}
+
+.remember-me {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.register {
+    margin-top: 10px;
+}
+
+.register a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register a:hover {
+    text-decoration: underline;
 }
